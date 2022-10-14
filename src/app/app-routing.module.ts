@@ -6,9 +6,9 @@ import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   { path: '', component: LocationComponent },
-  { path: 'dia-chi', component: LocationComponent },
-  { path: 'thuc-don', component: MenuComponent },
-  { path: 'thuc-don/danh-sach-mon-an', component:  MenuListComponent},
+  { path: 'dia-chi', component: LocationComponent, data :{ id:'1', name:"Địa chỉ"} },
+  { path: 'thuc-don', component: MenuComponent, data :{ id:'2', name:"Thực đơn"} },
+  { path: 'thuc-don/danh-sach-mon-an', component:  MenuListComponent, data :{ id:'2', name:"Thực đơn"}},
 ];
 
 @NgModule({
