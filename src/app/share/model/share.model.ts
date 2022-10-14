@@ -11,18 +11,8 @@ export const CONFIG_SYSTEM = {
             activeButton: 2
         },
         {
-            name: 'TIN TỨC',
-            link: '/tin-tuc',
-            activeButton: 3
-        },
-        {
-            name: 'TIN TỨC',
-            link: '/tin-tuc',
-            activeButton: 4
-        },
-        {
-            name: 'VỀ CHÚNG TÔI',
-            link: '/ve-chung-toi',
+            name: 'KHUYẾN MÃI',
+            link: '/khuyen-mai',
             activeButton: 5
         }
     ],

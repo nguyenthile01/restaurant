@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CONFIG_SYSTEM } from '../share/model/share.model';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from '../share/component/modal/modal.component';
 
 @Component({
   selector: 'app-container',
@@ -13,13 +15,20 @@ export class ContainerComponent implements OnInit {
   faCoffee = faCoffee;
   activeButton = 1;
   menu = CONFIG_SYSTEM.NAVIGATION;
-  constructor() { }
+  constructor(
+    private ngbModal: NgbModal,
+  ) { }
 
   ngOnInit() {
   }
 
   addClassActive(action: number) {
     this.activeButton = action;
+  }
+
+  callNow() {
+    const modalRef = this.ngbModal.open(ModalComponent);
+    modalRef.componentInstance.message = '';
   }
 
 }

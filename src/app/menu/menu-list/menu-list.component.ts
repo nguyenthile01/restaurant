@@ -7,6 +7,7 @@ import { CONFIG_SYSTEM } from 'src/app/share/model/share.model';
   styleUrls: ['./menu-list.component.less']
 })
 export class MenuListComponent implements OnInit {
+  activeButton = 1;
   categories = CONFIG_SYSTEM.CATEGORIES;
   isCollapsed = false;
   menuList: {
@@ -17,13 +18,17 @@ export class MenuListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.menuList = this.categories[0].menu;
   }
 
   showMenu(idCategory: number) {
     const categorySelected = this.categories.find(category => category.id === idCategory);
-    console.log("categorySelected", categorySelected);
-    
     this.menuList = categorySelected?.menu!;
+    this.addClassActive(idCategory);
+  }
+
+  addClassActive(action: number) {
+    this.activeButton = action;
   }
 
 }
