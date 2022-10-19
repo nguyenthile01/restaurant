@@ -92,27 +92,27 @@ export const CONFIG_SYSTEM = {
             desc: "Sự kết hợp hoàn hảo giữa hạt cà phê Robusta & Arabica thượng hạng được trồng trên những vùng cao nguyên Việt Nam màu mỡ, qua những bí quyết rang xay độc đáo, Highlands Coffee chúng tôi tự hào giới thiệu những dòng sản phẩm Cà phê mang hương vị đậm đà và tinh tế.",
             menu: [
                 {
-                    title: "Chả Giò Cù Lao Rẻ",
+                    title: "Gà Tiềm Ớt Hiểm",
                     price: "90.000",
                     img: "../../assets/images/ga-nuong.png",
                 },
                 {
-                    title: "Ram Chả Cá Vườn Ba Tôi",
+                    title: "Gà Chiên Mắm",
                     price: "100.000",
                     img: "../../assets/images/ga-nuong.png",
                 },
                 {
-                    title: "Gỏi Tôm Thịt Ngó Sen",
+                    title: "Gà Lên Mâm 3 Món",
                     price: "110.000",
                     img: "../../assets/images/ga-nuong.png",
                 },
                 {
-                    title: "Gỏi Hải Sản Ngó Sen",
+                    title: "Gà Lá Giang",
                     price: "130.000",
                     img: "../../assets/images/ga-nuong.png",
                 },
                 {
-                    title: "Khoai Tây Chiên",
+                    title: "Gà Nướng Muối Ớt + Xôi Hấp",
                     price: "60.000",
                     img: "../../assets/images/ga-nuong.png",
                 },
